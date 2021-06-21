@@ -1,0 +1,51 @@
+.field {
+    width: 80%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 15px;
+    
+}
+
+
+.fieldLabel {
+    width: 15%;
+text-align: left;
+}
+
+.radioBtn .fieldLabel:first-child {
+    width: 17%;
+}
+
+.radioBtn {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 85%;
+    margin-top: 16px;
+}
+
+.or_btn {
+    background: #fff;
+    position: absolute;
+    top: 11px;
+    left: 12px;
+    right: 0;
+    text-align: center;
+    width: 29px;
+    padding: 5px;
+    border-radius: 21px;
+    margin: 0 auto;
+    z-index: 99;
+}
+
+.btns {
+    position: relative;
+    margin-left: 15%;
+}
+.btns button {
+    margin-right: 0px;
+}
+div#panel1a-header {     background: #039be5;    color: #fff; }
+
+div#panel1a-header .MuiSvgIcon-root{ color: #fff; }

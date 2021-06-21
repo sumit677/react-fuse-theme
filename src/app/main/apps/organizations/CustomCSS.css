@@ -1,0 +1,29 @@
+div#panel1a-header {
+    background: #039be5;
+    color: #fff;
+}
+
+.selected-row{
+    background-color: yellow !important;
+  }
+
+  .w-49-5p{
+      width:49.5%;
+  }
+
+  #state{width:49.5%; margin: 8px; margin-left:0px;}
+
+  #country{width:49.5%; margin: 8px; margin-right:0px;}
+
+  .esign_slab .MuiFormControl-marginNormal-762{margin-top:0px; margin-bottom:0px; margin-right: 0.25rem; width: 20%; }
+
+  #outlined-password-input{padding: 9.5px 7px;}
+
+  .esign_slab label{transform: translate(14px, 12px) scale(1);}
+
+  .MuiOutlinedInput-root-784.Mui-focused .MuiOutlinedInput-notchedOutline-791{border:1px solid #fff; }
+
+  .MuiFormLabel-root-777.Mui-focused{color:#fff;}
+
+
+  
