@@ -8,7 +8,7 @@ import JWTLoginTab from './tabs/JWTLoginTab';
 import FirebaseLoginTab from './tabs/FirebaseLoginTab';
 import Auth0LoginTab from './tabs/Auth0LoginTab';
 import {makeStyles} from '@material-ui/styles';
-
+import './Login-css.css';  
 const useStyles = makeStyles(theme => ({
     root: {
         background: 'linear-gradient(to right, ' + theme.palette.primary.dark + ' 0%, ' + darken(theme.palette.primary.dark, 0.5) + ' 100%)',
@@ -32,7 +32,7 @@ function Login()
             <div className="flex flex-col flex-grow-0 items-center text-white p-16 text-center md:p-128 md:items-start md:flex-shrink-0 md:flex-1 md:text-left">
 
                 <FuseAnimate animation="transition.expandIn">
-                    <img className="w-128 mb-32" src="assets/images/logos/bayatreeLargeLogo.png" alt="logo"/>
+                    <img className="w-128 mb-32" src="assets/images/logos/BayaTree_Logo_Blakc_bg.png" alt="logo"/>
                 </FuseAnimate>
 
                 <FuseAnimate animation="transition.slideUpIn" delay={300}>
@@ -61,18 +61,18 @@ function Login()
                             value={selectedTab}
                             onChange={handleTabChange}
                             variant="fullWidth"
-                            className="mb-32"
+                            className="mb-32 borderAdjst"
                         >
                             <Tab
                                 icon={<img className="h-40 p-4 rounded-12" src="assets/images/logos/bayatreeSmallLogo.png" alt="firebase"/>}
                                 className="min-w-0"
                                 label="EDM"
                             />
-                            <Tab
+                            {/* <Tab
                                 icon={<img className="h-40" src="assets/images/logos/samlSmallLogo.png" alt="firebase"/>}
                                 className="min-w-0"
                                 label="SAML"
-                            />
+                            /> */}
                             {/* <Tab
                                 icon={<img className="h-40" src="assets/images/logos/auth0.svg" alt="auth0"/>}
                                 className="min-w-0"

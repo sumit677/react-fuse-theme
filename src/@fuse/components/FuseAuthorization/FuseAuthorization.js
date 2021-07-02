@@ -9,12 +9,14 @@ class FuseAuthorization extends Component {
 
     constructor(props, context)
     {
+        console.log("constructor");
         super(props);
         const {routes} = context;
         this.state = {
             accessGranted: true,
             routes
         };
+
     }
 
     componentDidMount()
@@ -52,6 +54,7 @@ class FuseAuthorization extends Component {
 
     redirectRoute()
     {
+        console.log("redirectRoute");
         const {location, userRole, history} = this.props;
         const {pathname, state} = location;
         const redirectUrl = state && state.redirectUrl ? state.redirectUrl : '/';
@@ -73,10 +76,11 @@ class FuseAuthorization extends Component {
         Redirect to dashboard or redirectUrl
         */
         else
+        if(redirectUrl=='/')
         {
             console.log("redirectUrl" + redirectUrl);
             history.push({
-                pathname: redirectUrl
+                pathname: '/dashboard'
             });
         }
     }

@@ -62,7 +62,7 @@ function ContactsList(props)
     return (
         <FuseAnimate animation="transition.slideUpIn" delay={300}>
             <ReactTable
-                className="-striped -highlight h-full sm:rounded-16 overflow-hidden"
+                className="-striped -highlight h-full sm:rounded-16 overflow-hidden w-full"
                 getTrProps={(state, rowInfo, column) => {
                 const index =    rowInfo ? rowInfo.index : -1;
                     return {
@@ -88,95 +88,95 @@ function ContactsList(props)
                 }}
                 data={filteredData}
                 columns={[
-                    {
-                        Header   : () => (
-                            <Checkbox
-                                onClick={(event) => {
-                                    event.stopPropagation();
-                                }}
-                                onChange={(event) => {
-                                    event.target.checked ? dispatch(Actions.selectAllContacts()) : dispatch(Actions.deSelectAllContacts());
-                                }}
-                                checked={selectedContactIds.length === Object.keys(contacts).length && selectedContactIds.length > 0}
-                                indeterminate={selectedContactIds.length !== Object.keys(contacts).length && selectedContactIds.length > 0}
-                            />
-                        ),
-                        accessor : "",
-                        Cell     : row => {
-                            return (<Checkbox
-                                    onClick={(event) => {
-                                        event.stopPropagation();
-                                    }}
-                                    checked={selectedContactIds.includes(row.value.id)}
-                                    onChange={() => dispatch(Actions.toggleInSelectedContacts(row.value.id))}
-                                />
-                            )
-                        },
-                        className: "justify-center",
-                        sortable : false,
-                        width    : 64
-                    },
-                    {
-                        Header   : () => (
-                            selectedContactIds.length > 0 && (
-                                <Icon/>
-                            )
-                        ),
-                        accessor : "avatar",
-                        Cell     : row => (
-                            <Avatar className="mr-8" alt={row.original.siteName} src={row.value}/>
-                        ),
-                        className: "justify-center",
-                        width    : 80,
-                        sortable : false
-                    },
+                    // {
+                    //     Header   : () => (
+                    //         <Checkbox
+                    //             onClick={(event) => {
+                    //                 event.stopPropagation();
+                    //             }}
+                    //             onChange={(event) => {
+                    //                 event.target.checked ? dispatch(Actions.selectAllContacts()) : dispatch(Actions.deSelectAllContacts());
+                    //             }}
+                    //             checked={selectedContactIds.length === Object.keys(contacts).length && selectedContactIds.length > 0}
+                    //             indeterminate={selectedContactIds.length !== Object.keys(contacts).length && selectedContactIds.length > 0}
+                    //         />
+                    //     ),
+                    //     accessor : "",
+                    //     Cell     : row => {
+                    //         return (<Checkbox
+                    //                 onClick={(event) => {
+                    //                     event.stopPropagation();
+                    //                 }}
+                    //                 checked={selectedContactIds.includes(row.value.id)}
+                    //                 onChange={() => dispatch(Actions.toggleInSelectedContacts(row.value.id))}
+                    //             />
+                    //         )
+                    //     },
+                    //     className: "justify-center",
+                    //     sortable : false,
+                    //     width    : 64
+                    // },
+                    // {
+                    //     Header   : () => (
+                    //         selectedContactIds.length > 0 && (
+                    //             <Icon/>
+                    //         )
+                    //     ),
+                    //     accessor : "avatar",
+                    //     Cell     : row => (
+                    //         <Avatar className="mr-8" alt={row.original.siteName} src={row.value}/>
+                    //     ),
+                    //     className: "justify-center",
+                    //     width    : 80,
+                    //     sortable : false
+                    // },
                     {
                         Header    : "Organization Name",
                         accessor  : "siteName",
-                        className: "justify-center",
+                        className: "justify-center color__chng",
                         filterable: true,
-                        className : "font-bold",
-                        width : 150
+                        // className : "font-bold",
+                        //width : 150
                     },
                     {
                         Header    : "Organization Code",
                         accessor  : "siteCode",
-                        className: "justify-center",
+                        className: "justify-center color__chng",
                         filterable: true,
-                        className : "font-bold",
-                        width : 150
+                        // className : "font-bold",
+                        //width : 150
                     },
                     {
                         Header    : "Organization Type",
                         accessor  : "siteType",
-                        className: "justify-center",
+                        className: "justify-center color__chng",
                         filterable: true,
-                        width : 150
+                       // width : 150
                     },
                     {
                         Header    : "City",
                         accessor  : "city",
-                        className: "justify-center",
+                        className: "justify-center color__chng",
                         filterable: true,
-                        width : 150
+                        //width : 150
                     },
                     {
                         Header    : "State",
                         accessor  : "state",
-                        className: "justify-center",
+                        className: "justify-center color__chng",
                         filterable: true,
-                        width : 150
+                        //width : 150
                     },
                     {
                         Header    : "Organization Status",
                         accessor  : "siteStatus",
-                        className: "justify-center",
+                        className: "justify-center color__chng",
                         filterable: true,
-                        width : 150
+                        //width : 150
                     },
                     {
                         Header: "Operations",
-                        width : 170,
+                        //width : 170,
                         Cell  : row => (
                             <div className="flex items-center">
                                 {/* <IconButton

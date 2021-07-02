@@ -168,10 +168,13 @@ export function logoutUser()
             return null;
         }
 
-        history.push({
-            pathname: '/'
-        });
+        // history.push({
+        //     pathname: '/'
+        // });
 
+        history.push({
+            pathname: '/login'
+        });
         switch ( user.from )
         {
             case 'firebase':

@@ -26,7 +26,7 @@ function ToolbarLayout1(props)
     return (
         <ThemeProvider theme={toolbarTheme}>
             <AppBar id="fuse-toolbar" className="flex relative z-10" color="default">
-                <Toolbar className="p-0">
+                <Toolbar className="p-0 justify-end min-h-40">
 
                     {config.navbar.display && config.navbar.position === 'left' && (
                         <Hidden lgUp>
@@ -35,17 +35,17 @@ function ToolbarLayout1(props)
                         </Hidden>
                     )}
 
-                    <div className="flex flex-1">
+                    {/* <div className="flex flex-1">
                         <Hidden mdDown>
                             <FuseShortcuts className="px-16"/>
                         </Hidden>
-                    </div>
+                    </div> */}
 
-                    <div className="flex">
+                    <div className="flex" >
 
                         <UserMenu/>
 
-                        <div className={classes.separator}/>
+                        {/* <div className={classes.separator}/>
 
                         <FuseSearch/>
 
@@ -58,7 +58,7 @@ function ToolbarLayout1(props)
 
                         <div className={classes.separator}/>
 
-                        <QuickPanelToggleButton/>
+                        <QuickPanelToggleButton/> */}
                     </div>
 
                     {config.navbar.display && config.navbar.position === 'right' && (

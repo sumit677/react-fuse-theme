@@ -155,12 +155,12 @@ function RMSFormApp(props)
             <div className="flex flex-1 items-center justify-between p-24">
                 <div className="flex flex-col">
                 
-                    <Typography variant="h6">Dashboard Doctor</Typography>
-                    <div className="flex items-center mb-16">
+                    <Typography variant="h6">Add Patient</Typography>
+                    {/* <div className="flex items-center mb-16">
                        <Typography color="textSecondary">Add Patient</Typography>
                         
                         
-                    </div>
+                    </div> */}
                 </div>
                 <Button
                     className="normal-case"

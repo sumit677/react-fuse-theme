@@ -148,9 +148,9 @@ function handleEditScreen (){
                     <Typography variant="h6">Manage Organization</Typography>
                     
                 </div>
-                <div className="flex">
+                <div className="flex btn_all">
                 <Button
-                    className="normal-case mx-1"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"
                     onClick={handleSearch}
@@ -161,7 +161,7 @@ function handleEditScreen (){
                     Search
                 </Button>
                 <Button
-                    className="normal-case mx-1"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"
                     onClick={handleReset}
@@ -172,7 +172,7 @@ function handleEditScreen (){
                     Reset
                 </Button>
                 <Button
-                    className="normal-case mx-1"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     onClick={handleAdd}
                    component={Link} to="/apps/organizations/addorganization" 
@@ -182,7 +182,7 @@ function handleEditScreen (){
                     Add
                 </Button>
                 <Button
-                    className="normal-case mx-1"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"
                     onClick={handleEditScreen}
@@ -192,7 +192,7 @@ function handleEditScreen (){
                     Edit
                 </Button>
                 <Button
-                    className="normal-case mx-1"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"
                     href="/apps/dashboards/analytics"
@@ -203,7 +203,7 @@ function handleEditScreen (){
                     View
                 </Button>
                 <Button
-                    className="normal-case mx-1"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"
                     href="/apps/dashboards/analytics"
@@ -214,7 +214,7 @@ function handleEditScreen (){
                     Delete
                 </Button>
                     <Button
-                    className="normal-case mx-1"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"
                   //  href="/apps/dashboards/analytics"

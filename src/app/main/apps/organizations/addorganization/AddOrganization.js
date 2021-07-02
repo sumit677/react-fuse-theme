@@ -482,7 +482,7 @@ function AddOrganization(props) {
         <FusePageCarded
             classes={{
                 toolbar: "p-0",
-                header : "min-h-72 h-72 sm:h-136 sm:min-h-136"
+                header : "min-h-60 h-60"
             }}
             header={
                 
@@ -490,24 +490,14 @@ function AddOrganization(props) {
 
                         <div className="flex flex-col items-start max-w-full">
 
-                            <FuseAnimate animation="transition.slideRightIn" delay={300}>
+                            <FuseAnimate animation="transition.slideRightIn" >
                                 <Typography className="normal-case flex items-center sm:mb-12" component={Link} role="button" to="/apps/organizations/all" color="inherit">
                                     <Icon className="mr-4 text-20">arrow_back</Icon>
-                                    Manage Organizations
+                                    {seacrhScreenState.selectedRowId!=0 ?  'Edit Organization' : 'Add Organization'}
                                 </Typography>
                             </FuseAnimate>
 
-                            <div className="flex items-center max-w-full">
-                                
-                                <div className="flex flex-col min-w-0">
-                                    <FuseAnimate animation="transition.slideLeftIn" delay={300}>
-                                        <Typography className="text-16 sm:text-20 truncate">
-                                        {seacrhScreenState.selectedRowId!=0 ?  'Edit Organization' : 'Add Organization'}
-                                        </Typography>
-                                    </FuseAnimate>
-                                   
-                                </div>
-                            </div>
+                           
                         </div>
                 <div className="flex items-center esign_slab justify-end">
 
@@ -522,10 +512,11 @@ function AddOrganization(props) {
                     margin="normal"
                     variant="outlined"
                     onChange={handleChangeEsign('esign')}
+                    style={{width: "20%", marginTop: "9px", marginRight: "3px" }}
                     
                 />
                 <Button
-                    className="normal-case mx-1 h-36"
+                    className="normal-case mx-1 btn_mrg "
                     variant="contained"
                     component="a"
                     target="_blank"
@@ -536,7 +527,7 @@ function AddOrganization(props) {
                     Submit
                 </Button>
                 <Button
-                    className="normal-case mx-1 h-36"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"
                     onClick={handleReset}
@@ -546,7 +537,7 @@ function AddOrganization(props) {
                 </Button>
                 
                 <Button
-                    className="normal-case mx-1 h-36"
+                    className="normal-case mx-1 btn_mrg"
                     variant="contained"
                     component="a"  onClick={handleClose}
                     component={Link} to="/apps/organizations/" 

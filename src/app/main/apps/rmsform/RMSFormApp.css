@@ -49,3 +49,12 @@ text-align: left;
 div#panel1a-header {     background: #039be5;    color: #fff; }
 
 div#panel1a-header .MuiSvgIcon-root{ color: #fff; }
+
+#panel1a-header .MuiExpansionPanelSummary-content.Mui-expanded, .MuiExpansionPanelSummary-content{
+    margin: 10px 0;
+    } 
+
+    
+    #panel1a-header {  min-height: 30px; }
+
+    

@@ -6,7 +6,7 @@ import FusePageSimpleSidebar from './FusePageSimpleSidebar';
 import FusePageSimpleHeader from './FusePageSimpleHeader';
 import * as PropTypes from 'prop-types';
 
-const headerHeight = 120;
+const headerHeight = 60;
 const toolbarHeight = 64;
 const drawerWidth = 240;
 

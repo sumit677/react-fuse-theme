@@ -25,10 +25,22 @@ const routeConfigs = [
 
 const routes = [
     ...FuseUtils.generateRoutesFromConfigs(routeConfigs),
+    
     {
         path     : '/',
         exact    : true,
+        component: () => <Redirect to="/login"/>
+        // component: () => <Redirect to="/login"/>
+    },{
+        path     : '/dashboard',
+        exact    : true,
         component: () => <Redirect to="/apps/dashboards/analytics"/>
+        // component: () => <Redirect to="/login"/>
+    },
+    {
+        path     : '/login',
+        exact    : true,
+        component: () => <Redirect to="/login"/>
         // component: () => <Redirect to="/login"/>
     },
     {
