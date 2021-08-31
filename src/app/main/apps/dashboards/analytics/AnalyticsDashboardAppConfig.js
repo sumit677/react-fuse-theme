@@ -6,6 +6,7 @@ export const AnalyticsDashboardAppConfig = {
             config: {}
         }
     },
+    auth: ['admin'],
     routes  : [
         {
             path     : '/apps/dashboards/analytics',

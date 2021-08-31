@@ -18,7 +18,8 @@ class jwtService extends FuseUtils.EventEmitter {
                 if ( err.response.status === 401 && err.config && !err.config.__isRetryRequest )
                 {
                     // if you ever get an unauthorized response, logout the user
-                    this.emit('onAutoLogout', 'Invalid access_token');
+                    //this.emit('onAutoLogout', 'Invalid access_token');
+                    this.emit('onAutoLogout', 'Auto login functionality is currenty disabled');
                     this.setSession(null);
                 }
                 throw err;

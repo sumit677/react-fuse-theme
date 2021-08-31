@@ -19,28 +19,29 @@ const navigationConfig = [
                         'title': 'Analytics',
                         'type' : 'item',
                         'url'  : '/apps/dashboards/analytics'
-                    },
-                    {
-                        'id'   : 'project-dashboard',
-                        'title': 'Project',
-                        'type' : 'item',
-                        'url'  : '/apps/dashboards/project'
-                    }
+                        }//,
+                    // {
+                    //     'id'   : 'project-dashboard',
+                    //     'title': 'Project',
+                    //     'type' : 'item',
+                    //     'url'  : '/apps/dashboards/project'
+                    // }
                 ]
             },
-            {
-                'id'   : 'RMS_PATIENTS_SCREEN',
-                'title': 'RMS Patients Screen',
-                'type' : 'item',
-                'icon' : 'today',
-                'url'  : '/apps/rmsform'
-            }, 
+           
             {
                 'id'   : 'EDM_ORGANIZATION_SCREEN',
-                'title': 'Manage Organization Screen',
+                'title': 'Manage Organizations',
                 'type' : 'item',
                 'icon' : 'today',
                 'url'  : '/apps/organizations'
+            },
+            {
+                'id'   : 'RMS_PATIENTS_SCREEN',
+                'title': 'Manage Patients',
+                'type' : 'item',
+                'icon' : 'today',
+                'url'  : '/apps/rmsform'
             }
 
            

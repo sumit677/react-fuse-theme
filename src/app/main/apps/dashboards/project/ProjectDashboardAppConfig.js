@@ -6,6 +6,7 @@ export const ProjectDashboardAppConfig = {
             config: {}
         }
     },
+    auth: ['admin'],
     routes  : [
         {
             path     : '/apps/dashboards/project',

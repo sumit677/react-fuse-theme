@@ -62,7 +62,7 @@ function ContactsList(props)
     return (
         <FuseAnimate animation="transition.slideUpIn" delay={300}>
             <ReactTable
-                className="-striped -highlight h-full sm:rounded-16 overflow-hidden w-full"
+                className="-striped -highlight h-full sm:rounded-16 overflow-hidden w-full" minRows={0}
                 getTrProps={(state, rowInfo, column) => {
                 const index =    rowInfo ? rowInfo.index : -1;
                     return {
@@ -192,26 +192,26 @@ function ContactsList(props)
                                     )}
                                 </IconButton> */}
                                 <IconButton
-                                    onClick={(ev) => {
-                                        ev.stopPropagation();
-                                        dispatch(Actions.removeContact(row.original.id));
-                                    }}
+                                    // onClick={(ev) => {
+                                    //     ev.stopPropagation();
+                                    //     dispatch(Actions.removeContact(row.original.id));
+                                    // }}
                                 >
                                     <Icon>edit</Icon>
                                 </IconButton>
                                 <IconButton
-                                    onClick={(ev) => {
-                                        ev.stopPropagation();
-                                        dispatch(Actions.removeContact(row.original.id));
-                                    }}
+                                    // onClick={(ev) => {
+                                    //     ev.stopPropagation();
+                                    //     dispatch(Actions.removeContact(row.original.id));
+                                    // }}
                                 >
                                     <Icon>pageview</Icon>
                                 </IconButton>
                                 <IconButton
-                                    onClick={(ev) => {
-                                        ev.stopPropagation();
-                                        dispatch(Actions.removeContact(row.original.id));
-                                    }}
+                                    // onClick={(ev) => {
+                                    //     ev.stopPropagation();
+                                    //     dispatch(Actions.removeContact(row.original.id));
+                                    // }}
                                 >
                                     <Icon>delete</Icon>
                                 </IconButton>
