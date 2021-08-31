@@ -302,6 +302,23 @@ function RMSForgetPasswordEsignApp(props)
   }
 
   
+  function handleClose()
+  {
+    events.userName = 'valleyadmin';
+    events.response = [];
+    events.error ="";
+    events.progressStatus='inProgress';
+    events.radioButtonFlag= true;
+    events.verifyDisableFlag= true;
+    events.submitDisableFlag=true;
+    events.securityQuestion= 'admin';
+    events.sendCodeLabel= 'SEND CODE';
+    events.disableFLag= false;
+    events.sendDisableFlag= true;
+    events.successSnackbar=false;
+    events.errorSnackbar=false
+    
+  }
   
   function sendCodeEvent()
   {
@@ -378,7 +395,7 @@ function RMSForgetPasswordEsignApp(props)
                 <Button
                     className="normal-case"
                     variant="contained"
-                    component="a"
+                    component="a"  onClick={handleClose}
                     component={Link} to="/apps/dashboards/analytics"
                 >
                     <CancelIcon className="mr-4">link</CancelIcon>
