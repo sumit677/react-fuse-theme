@@ -13,6 +13,7 @@ import {NotesAppConfig} from './notes/NotesAppConfig';
 import {RMSFormConfig} from  './rmsform/RMSFormConfig';
 import {ManageOrganizationAppConfig} from  './organizations/ManageOrganizationAppConfig';
 import {RMSForgetPasswordEsignConfig} from  './rmsForgetPasswordEsign/RMSForgetPasswordEsignConfig';
+import {QuestionnaireAppConfig} from  './questionnaire/QuestionnaireAppConfig';
 export const appsConfigs = [
     AnalyticsDashboardAppConfig,
     ProjectDashboardAppConfig,
@@ -28,5 +29,6 @@ export const appsConfigs = [
     NotesAppConfig,
     RMSFormConfig,
     ManageOrganizationAppConfig,
-    RMSForgetPasswordEsignConfig
+    RMSForgetPasswordEsignConfig,
+    QuestionnaireAppConfig
 ];

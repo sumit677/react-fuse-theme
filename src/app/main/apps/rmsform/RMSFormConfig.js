@@ -6,6 +6,7 @@ export const RMSFormConfig = {
             config: {}
         }
     },
+    auth: ['admin'],
     routes  : [
         {
             path     : '/apps/rmsform',

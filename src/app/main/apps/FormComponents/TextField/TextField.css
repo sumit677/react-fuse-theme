@@ -1,0 +1,27 @@
+.common {
+  padding-right: 4%;
+  padding-left: 0%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  float: left;
+}
+
+.oneColumn {
+  width: 25%;
+}
+
+.twoColumn {
+  width: 50%;
+}
+
+.threeColumn {
+  width: 75%;
+}
+
+.fourColumn {
+  width: 100%;
+}
+.asterisk_required {
+  color: red;
+}
+
