@@ -1,5 +1,5 @@
-import {MaterialUIComponentsNavigation} from 'app/main/documentation/material-ui-components/MaterialUIComponentsNavigation';
-import {authRoles} from 'app/auth';
+// import {MaterialUIComponentsNavigation} from 'app/main/documentation/material-ui-components/MaterialUIComponentsNavigation';
+// import {authRoles} from 'app/auth';
 
 const navigationConfig = [
     {
@@ -41,9 +41,14 @@ const navigationConfig = [
                 'type' : 'item',
                 'icon' : 'today',
                 'url'  : '/apps/organizations'
+            },
+            {
+                'id'   : 'EDM_QUESTIONNAIRE_SCREEN',
+                'title': 'Manage Questionnaire',
+                'type' : 'item',
+                'icon' : 'today',
+                'url'  : '/apps/questionnaire'
             }
-
-           
         ]
     },
    

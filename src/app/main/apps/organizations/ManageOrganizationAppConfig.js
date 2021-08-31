@@ -7,6 +7,7 @@ export const ManageOrganizationAppConfig = {
             config: {}
         }
     },
+    auth: ['admin'],
     routes  : [
         
         {

@@ -14,6 +14,7 @@ import FuseNavHorizontalLink from './horizontal/FuseNavHorizontalLink';
 function FuseNavigation(props)
 {
     const {navigation, layout, active, dense, className} = props;
+    console.log("navigation"+JSON.stringify(navigation));
 
     const verticalNav = (
         <List className={clsx("navigation whitespace-no-wrap", className)}>

@@ -41,6 +41,8 @@ class FuseAuthorization extends Component {
         const {pathname} = location;
 
         const matched = matchRoutes(state.routes, pathname)[0];
+        console.log("matched.route.auth" + matched.route.auth);
+        console.log("pathname" +pathname);
 
         return {
             accessGranted: matched ? FuseUtils.hasPermission(matched.route.auth, userRole) : true
@@ -54,11 +56,12 @@ class FuseAuthorization extends Component {
 
     redirectRoute()
     {
-        console.log("redirectRoute");
+        
         const {location, userRole, history} = this.props;
+        console.log("redirectRoute = role" + userRole);
         const {pathname, state} = location;
         const redirectUrl = state && state.redirectUrl ? state.redirectUrl : '/';
-
+        console.log("redirectUrl out" + redirectUrl);
         /*
         User is guest
         Redirect to Login Page
@@ -75,19 +78,26 @@ class FuseAuthorization extends Component {
         User must be on unAuthorized page or just logged in
         Redirect to dashboard or redirectUrl
         */
-        else
-        if(redirectUrl=='/')
-        {
-            console.log("redirectUrl" + redirectUrl);
-            history.push({
-                pathname: '/dashboard'
-            });
-        }
+        else if(redirectUrl=='/')
+            {
+                console.log("redirectUrl" + redirectUrl);
+                history.push({
+                    pathname: '/dashboard'
+                });
+            }
+            else{
+                history.push({
+                    pathname: redirectUrl
+                });
+            }
+        
+        
     }
 
     render()
     {
-        // console.info('Fuse Authorization rendered', accessGranted);
+         console.info('Fuse Authorization rendered', this.state.accessGranted);
+         console.info('this.props.children', this.props.children);
         return this.state.accessGranted ? <React.Fragment>{this.props.children}</React.Fragment> : null;
     }
 }

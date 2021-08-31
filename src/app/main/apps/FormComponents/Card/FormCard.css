@@ -1,0 +1,11 @@
+.formCard {
+    border-radius: 12px;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid gray;
+    width: 90%;
+    float: left;
+  }
+  

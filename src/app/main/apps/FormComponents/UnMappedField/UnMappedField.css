@@ -1,0 +1,12 @@
+.UnMappedField {
+    padding-right: 4%;
+    padding-left: 0%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    float: left;
+    width: 50%;
+  }
+
+  .UnMappedFieldBgColor{
+      background-color: antiquewhite;
+  }
